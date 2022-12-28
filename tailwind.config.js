@@ -9,9 +9,7 @@ module.exports = {
             backgroundImage: {
                 'bgImg': "url('../public/img/femsachtergrond.jpeg')",
             },
-            fontFamily:{
-                nunito:["Nunito", "sans-serif"],
-            },
+
             backgroundSize: {
                 '400%': '400%'
             },
