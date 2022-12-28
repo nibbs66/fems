@@ -7,7 +7,7 @@ const Footer = () => {
     return (
         <div className={`flex py-4 mb-4 items-center justify-around`}>
             <div className={`cursor-pointer`}>
-                <a href={`https://www.facebook.com/234332720672406`} target="_blank">
+                <a href={`https://www.facebook.com/234332720672406`}>
                     <Facebook/>
                 </a>
             </div>
