@@ -25,7 +25,6 @@ const Header = () => {
 
             <ul className={`hidden lg:flex gap-4 text-lg text-white font-thin`}>
                 <li className={`cursor-pointer hover:text-slate-400`}><a href="#overons">Over Ons</a> </li>
-                <li className={`cursor-pointer hover:text-slate-400`}><a href="#nieuws">Nieuws</a></li>
                 <li className={`cursor-pointer hover:text-slate-400`}><a href="#reviews">Reviews</a></li>
                 <li className={`cursor-pointer hover:text-slate-400`}><a href="#openingstijden">Openingstijden</a></li>
                 <li className={`cursor-pointer hover:text-slate-400`}><a href="#locatie">Locatie</a></li>
