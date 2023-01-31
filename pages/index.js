@@ -26,7 +26,7 @@ export default function Home() {
        {/*<Nieuws/>*/}
        <Reviews/>
        <Openingstijden/>
-       <div className={`w-screen`}>
+       <div className={`w-full`}>
            <HomeMap/>
        </div>
 

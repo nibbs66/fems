@@ -6,6 +6,7 @@ import 'mapbox-gl/dist/mapbox-gl.css'
 import {ScissorsIcon} from "@heroicons/react/24/outline";
 import scissors from '../public/scissors-icon.svg'
 import Title from "./Title";
+import Popover from "./Popover";
 
 const HomeMap = () => {
     const mapRef = useRef(null)
@@ -14,7 +15,7 @@ const HomeMap = () => {
         latitude: 53.407690,
         zoom: 18,
     })
-
+    const [showAddress, setShowAddress] = useState(false)
     return (
         <div id={`locatie`} className={`pt-32 flex flex-col justify-center items-center space-y-6 text-black`}>
             <Title title={'Locatie'}/>
@@ -32,8 +33,11 @@ const HomeMap = () => {
                     <NavigationControl showCompass={false} position={'top-left'} />
                 </div>
                 <Marker  longitude={6.663080} latitude={53.407690} offsetLeft={-15} offsetTop={-17} anchor="bottom">
+                  <div className={`group flex flex-col items-center`}>
+                      <Popover/>
 
-                   <ScissorsIcon className={`h-8 w-8 -rotate-45 text-pink-600`}/>
+                      <ScissorsIcon  className={`h-8 w-8 -rotate-45 text-pink-600 `}/>
+                  </div>
                 </Marker>
             </Map>
         </div>
