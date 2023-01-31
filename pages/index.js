@@ -10,6 +10,7 @@ import Reviews from "../components/Reviews";
 import Openingstijden from "../components/Openingstijden";
 import Locatie from "../components/Locatie";
 import Contact from "../components/Contact";
+import HomeMap from "../components/Map";
 
 export default function Home() {
   return (
@@ -25,7 +26,10 @@ export default function Home() {
        {/*<Nieuws/>*/}
        <Reviews/>
        <Openingstijden/>
-       <Locatie/>
+       <div className={`w-screen`}>
+           <HomeMap/>
+       </div>
+
        <Contact/>
 
 
